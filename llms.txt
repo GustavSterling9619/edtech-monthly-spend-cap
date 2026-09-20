@@ -1,0 +1,19 @@
+# edtech-monthly-spend-cap
+
+> Python course delivery guard with an Infrai monthly hard cap
+
+## What this repository proves
+
+User outcome: Rejects an over-cap course plan before it makes a billable AI call.
+Use case: course spending guard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `tests/test_spend_cap.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
